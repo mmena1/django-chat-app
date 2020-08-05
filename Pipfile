@@ -5,11 +5,14 @@ verify_ssl = true
 
 [dev-packages]
 selenium = "*"
+pytest-django = "*"
+pytest-asyncio = "*"
 
 [packages]
 django = "*"
 channels = "*"
 channels-redis = "*"
+ipdb = "*"
 
 [requires]
 python_version = "3.8"
