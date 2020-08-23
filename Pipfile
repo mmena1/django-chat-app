@@ -7,12 +7,12 @@ verify_ssl = true
 selenium = "*"
 pytest-django = "*"
 pytest-asyncio = "*"
+ipdb = "*"
 
 [packages]
 django = "*"
 channels = "*"
 channels-redis = "*"
-ipdb = "*"
 
 [requires]
 python_version = "3.8"

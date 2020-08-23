@@ -1,10 +1,15 @@
 from django.shortcuts import render
+from django.views import View
 
 
 def index(request):
     return render(request, 'chat/index.html')
 
-def room(request, room_name):
-    return render(request, 'chat/room.html', {
-        'room_name': room_name
-    })
+
+class RoomView(View):
+    template_name = 'chat/room.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name, {
+            'room_name': kwargs['room_name']
+        })
