@@ -8,6 +8,7 @@ selenium = "*"
 pytest-django = "*"
 pytest-asyncio = "*"
 ipdb = "*"
+coverage = "*"
 
 [packages]
 django = "*"

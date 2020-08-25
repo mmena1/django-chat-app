@@ -1,0 +1,14 @@
+# Coverage configuration file
+
+[run]
+source = .
+
+omit = 
+  */settings/*
+  */management/*
+  */migrations/*
+  */tests/*
+  manage.py
+  */asgi.py
+  */wsgi.py
+

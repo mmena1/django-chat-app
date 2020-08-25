@@ -29,6 +29,14 @@
 ## Tests
 Run all tests with:
 ```
-pipenv run python manage.py test
+pipenv run python manage.py test --settings=chat_app.settings.test
 ```
- **NOTE:** Redis server must be running
+### Coverage report
+Run tests with coverage support:
+```
+pipenv run coverage run manage.py test --settings=chat_app.settings.test
+```
+See the coverage report:
+```
+pipenv run coverage report
+```
